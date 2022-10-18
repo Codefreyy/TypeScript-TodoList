@@ -1,0 +1,23 @@
+{
+  "name": "ts-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codefreyy/TypeScript-TodoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codefreyy/TypeScript-TodoList/issues"
+  },
+  "homepage": "https://github.com/Codefreyy/TypeScript-TodoList#readme",
+  "dependencies": {
+    "vite": "^3.1.8"
+  }
+}
