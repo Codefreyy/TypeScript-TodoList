@@ -5,23 +5,7 @@ import TodoEvent from "../src/js/TodoEvent";
     const oInput: HTMLInputElement = document.querySelector('input')
     const oAddButton: HTMLElement = document.querySelector('button')
     const oTodoList: HTMLElement = document.querySelector('.todo-list')
-    const todoData: ITodoData[] = [
-        {
-            id: 1,
-            content: 'godfrey',
-            completed: false
-        },
-        {
-            id: 2,
-            content: 'godfrey1',
-            completed: false
-        },
-        {
-            id: 3,
-            content: 'godfrey2',
-            completed: false
-        }
-    ]
+    // const todoData: ITodoData[] = 
     const todoEvent: TodoEvent = new TodoEvent(todoData, oTodoList)
     const init = ():void => {
         bindEvent()
@@ -35,7 +19,7 @@ import TodoEvent from "../src/js/TodoEvent";
         const val: string = oInput.value.trim()
         if(val.length) {
             const res = todoEvent.addTodo(<ITodoData>{
-                id:4,
+                id: new Date().getTime(),
                 content:val,
                 completed:false
             })
